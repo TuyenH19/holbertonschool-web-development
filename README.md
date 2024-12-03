@@ -95,7 +95,7 @@ A heading (level 2)
 A text
 A button
 
-![alt text](image/Menbership.png)
+![alt text](image/Membership.png)
 
 # Task 6 - FAQ
 
