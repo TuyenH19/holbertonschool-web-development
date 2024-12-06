@@ -5,59 +5,468 @@
 }
 
 body {
-  font-family: source-sans-pro, sans-serif;
-  color: white;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-family: 'source-sans-pro', sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
-/** Header **/
+/** ========== Header ========== **/
 
 header {
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  padding: 10px 20px;
-  width: 100%;
-  z-index: 1;
-}
-
-header div logo {
-  display: inline-block;
-  position: absolute;
   height: 29.46px;
+  margin-top: 35.02px;
+  width: 100%;
+  z-index: 10;
 }
 
-header div .link a {
-  text-decoration: none;
-  position: absolute;
-  padding: 53px;
-  margin-top: 35.02;
-  width: 1041px;
-  height: 37px;
-  gap: 20px;
-  font-size: 12px;
-  font-weight: bold;
+.logo img {
+  width: 167.02px;
+  margin-left: 171.59px;
 }
+
+.link {
+  margin-right: 171.59px;
+}
+
+.link a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/** =========== Banner =========== **/
 
 .Banner {
-  background: url('./image/background.png'), rgba(151, 151, 151, 1);
+  background: url("./image/background.png"), rgba(151, 151, 151, 1);
   background-size: cover;
   align-items: center;
-  position: center;
-  margin: 0;
-  width: 1440px;
+  padding-top: 220px;
   height: 1093px;
 }
 
-.Banner .Banner_p1 h1{
-  text-align: centre;
+.banner_content h1 {
+  position: center;
+  text-align: center;
   font-size: 120px;
   font-weight: bold;
   width: 864px;
-  margin-left: 220px;
+  margin: auto;
+  top: 221px;
+  word-spacing: 40px;
+  color: white;
 }
 
-.Banner .Banner_p1 .Banner_text {
-  align-items: 1;
-  margin-bottom: ;
+.banner_content p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 593px;
+  top: 361px;
+  word-spacing: 15px;
+  color: white;
+}
+
+.banner_content p span {
+  margin-right: 40px;
+}
+
+.banner_content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border-color: transparent;
+  padding: 15px 20px;
+  background-color: rgba(194, 113, 255, 1);
+  margin-left: 639px;
+  margin-top: 38px;
+  color: white;
+}
+
+.banner_pro h2 span {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgba(194, 113, 255, 1);
+}
+
+.banner_pro h2 {
+  font-size: 32px;
+  font-weight: lighter;
+  color: white;
+  margin-left: 604px;
+  margin-top: 170px;
+  margin-right: 500px;
+}
+
+.banner_pro .pros {
+  background-color: transparent;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 96px;
+  margin-left: 217px;
+  gap: 90px;
+}
+
+.banner_pro .pros .pro {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+}
+
+.banner_pro .pros .pro img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.banner_pro .pros .pro h3 {
+  position: relative;
+  font-size: 18px;
+  font-weight: black;
+  color: white;
+}
+
+.banner_pro .pros .pro p {
+  padding: 10px;
+  font-size: 16px;
+  font-style: italic;
+  color: white;
+}
+
+/** ========== Quote ========== **/
+
+.Quote {
+  background-color: rgba(194, 113, 255, 1);
+  position: absolute;
+  width: 100%;
+  height: 392px;
+}
+
+.Quote div {
+  display: flex;
+  padding: 10px 20px;
+  position: center;
+  margin-left: 259px;
+  margin-top: 108px;
+}
+
+.Quote div img {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-left: 259;
+}
+
+.Quote div .blockquote {
+  flex-direction: column;
+  margin-left: 53px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.Quote div .blockquote blockquote {
+  margin-right: 190px;
+  font-size: 22px;
+  font-style: 400;
+  color: white;
+}
+
+.Quote div .blockquote .name {
+  margin-top: 30px;
+  font-size: 22px;
+  font-style: bold;
+  color: white;
+}
+.Quote div .blockquote .position {
+  font-size: 22px;
+  font-style: italic;
+  color: white;
+}
+
+/** ================ Videos ==============**/
+
+.Videos {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 624px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px 87px;
+  margin-top: 392px;
+}
+
+.Videos h1 {
+  font-size: 32px;
+  font-style: regular;
+  color: black;
+}
+
+.Videos h1 span {
+  font-weight: bold;
+  color: rgba(194, 113, 255, 1);
+}
+
+.videos_container {
+  padding: 75px;
+  width: 1228px;
+  height: 450px;
+  gap: 29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.video {
+  width: 255px;
+  height: 335px;
+  margin: auto;
+  position: relative;
+}
+
+.video .play {
+  position: absolute;
+  top: 45px;
+  left: 90px;
+  width: 64px;
+  height: 64px;
+}
+
+.video h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin: 15px 7px;
+}
+
+.video p {
+  color: rgba(7, 22, 41, 0.5016);
+  font-size: 14px;
+  width: 242px;
+  margin-bottom: 20px;
+  margin-left: 7px;
+}
+
+.video .author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 7px;
+}
+
+.author h3 {
+  color: rgba(194, 113, 255, 1);
+  font-size: 14px;
+}
+
+.video .author img {
+  margin-right: 15px;
+}
+
+.star {
+  display: flex;
+  margin: 15 0px;
+  position: relative;
+}
+
+.star img {
+  width: 15px;
+  height: 15px;
+}
+
+.star p {
+  position: absolute;
+  top: 0;
+  margin-left: 175px;
+  color: #c271ff;
+}
+
+/* ========== Membership =========== */
+
+.Membership {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-color: rgba(7, 22, 41, 1);
+  width: 100%;
+  height: 502px;
+  margin-top: 1000px;
+}
+
+.Membership h1 {
+  font-weight: 300;
+  font-size: 32px;
+  color: white;
+  margin-top: 60px;
+}
+
+.Membership h1 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.smiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  width: 90%;
+  padding: 80px;
+}
+
+.item_smile {
+  justify-content: center;
+  text-align: center;
+  width: 257px;
+  height: 153px;
+  padding: 10px;
+}
+
+.item_smile img {
+  margin-bottom: 20px;
+  width: 43.67px;
+  height: 35.35px;
+}
+
+.item_smile h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.item_smile p {
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 1.7; 
+  color: white;
+}
+
+.Membership button {
+  width: 162px;
+  height: 44px;
+  color: #ffffff;
+  background-color: #c271ff;
+  border-radius: 22px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* ========== F.A.Q ========== */
+
+.FAQ {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 858px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 83px;
+}
+
+.FAQ h1 {
+  font-size: 60px;
+  font-style: lighter;
+  color: black;
+}
+
+.row {
+  padding: 30px 20px;
+  width: 1228px;
+  height: 450px;
+  display: flex;
+  gap: 220;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.column {
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+  margin: auto;
+  width: 350px;
+  height: 242px;
+}
+
+.column h2 {
+  font-size: 16;
+  font-style: bold;
+}
+
+.column p {
+  margin-top: 30px;
+  font-size: 14;
+  font-style: 400;
+  color: rgba(7, 22, 41, 0.5016);
+}
+
+
+/** ========== Footer ========== **/
+
+footer {
+  background-color: rgba(7, 22, 41, 1);
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin-top: 3400px;
+  width: 100%;
+  height: 249px;
+}
+
+.footer_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin-top: 90px;
+}
+
+.footer_link img {
+  width: 169px;
+  height: 30px;
+  margin-left: 165px;
+}
+
+.social_icon {
+  margin-left: 736px;
+  align-items: right;
+}
+.social_icon img{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+footer p {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  font-style: 400;
+  color: rgba(255, 255, 255, 0.35);
+  top: 195px;
+  left: 672px;
+  opacity: 0.35;
 }
